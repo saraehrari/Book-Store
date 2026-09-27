@@ -1,4 +1,4 @@
-import books from "../data/books";
+import books from "../Data/Book";
 import { Link } from "react-router-dom";
 
 function Books() {
@@ -16,10 +16,7 @@ function Books() {
                 <p>{book.author}</p>
                 <p>${book.price}</p>
 
-                <Link
-                  to={`/books/${book.id}`}
-                  className="btn btn-dark w-100"
-                >
+                <Link to={`/bookdetails/${book.id}`} className="btn btn-dark w-100">
                   View Details
                 </Link>
               </div>

@@ -1,6 +1,6 @@
 
 import { use, useState } from "react";
-import books from "../Data/Data";
+import books from "../Data/Book";
 
 export default function Card({ Books }) {
   const [quantity, setQuantity] = useState(1);
