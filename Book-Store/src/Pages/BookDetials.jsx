@@ -1,13 +1,13 @@
 
 import { Link, useParams } from "react-router-dom";
-import Books from "./Book";
+import Book from "./Data/Book";
 
 export default function BookDetails() {
   const { id } = useParams();
 
-  const book = Books.find((p) => p.id === Number(id));
+  const Book = Book.find((p) => p.id === Number(id));
 
-  if (!book) {
+  if (!Book) {
     return <h2>Book Not Found!</h2>;
   }
 
@@ -20,26 +20,26 @@ export default function BookDetails() {
       <div className="row">
         <div className="col-md-4">
           <img
-            src={book.image}
-            alt={book.title}
+            src={Book.image}
+            alt={Book.title}
             className="img-fluid rounded"
           />
         </div>
 
         <div className="col-md-8">
-          <h2>{book.title}</h2>
+          <h2>{Book.title}</h2>
 
           <p>
-            <strong>Author:</strong> {book.author}
+            <strong>Author:</strong> {Book.author}
           </p>
 
           <p>
-            <strong>Category:</strong> {book.category}
+            <strong>Category:</strong> {Book.category}
           </p>
 
-          <h4>${book.price}</h4>
+          <h4>${Book.price}</h4>
 
-          <p>{book.description}</p>
+          <p>{Book.description}</p>
 
           <button className="btn btn-dark">
             Add to Cart
