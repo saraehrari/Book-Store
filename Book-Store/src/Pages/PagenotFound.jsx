@@ -1,11 +1,7 @@
-export default function PagebotFound(){
+export default function PagenotFound(){
     return(
-        <div>
-        <h1>
-            This Page not Found!
-        </h1>
-        <Link to="/book">Go BooK Page</Link>
-
-       </div>
+    <div>
+        <h1>404 - Page not Found!</h1>
+    </div>
     )
 }

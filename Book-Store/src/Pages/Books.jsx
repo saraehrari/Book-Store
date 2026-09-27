@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Books from "./Book";
+import Books from "./Books";
 
 export default function BooksPage() {
   return (

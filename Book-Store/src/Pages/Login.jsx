@@ -1,9 +1,9 @@
 export default function Login({ login }) {
   return (
     <div>
-      <h1>Login Page</h1>
+      <h1 style={{color:"#111"}}>Login Page</h1>
 
-      <button onClick={login}>
+      <button onClick={login} Navigate to="Book">
         Login
       </button>
     </div>

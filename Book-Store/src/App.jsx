@@ -1,5 +1,6 @@
   import { useState } from "react";
 import { Routes, Route, Navigate } from "react-router-dom";
+import "./App.css";
 
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
@@ -40,6 +41,7 @@ function App() {
         />
 
         <Route path="/bookdetails/:id" element={<BookDetails />} />
+    
 
         <Route
           path="/login"
@@ -50,7 +52,11 @@ function App() {
               <Login isAuth={isAuth} login={login} logout={logout} />
             )
           }
+
+           
         />
+
+        
       </Routes>
     </>
   );
