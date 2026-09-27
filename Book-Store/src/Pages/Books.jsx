@@ -12,7 +12,7 @@ export default function BooksPage() {
             OUR COLLECTION
           </span>
 
-          <h1 className="books-title">
+          <h1 style={{color:"#111"}}>
             Discover Your Next Book
           </h1>
 
