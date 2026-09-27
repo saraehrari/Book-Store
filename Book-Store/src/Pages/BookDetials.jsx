@@ -22,10 +22,6 @@ export default function BookDetails() {
           <p><strong>Category:</strong> {book.category}</p>
           <h4>${book.price}</h4>
           <p>{book.description}</p>
-
-          <button className="btn btn-dark">
-            Add to Cart
-          </button>
         </div>
       </div>
     
