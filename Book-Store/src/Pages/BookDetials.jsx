@@ -17,7 +17,7 @@ export default function BookDetails() {
       </Link>
 
         <div className="col-md-8">
-          <h2>{book.title}</h2>
+          <h2 style={{color:"#111"}}>{book.title}</h2>
           <p><strong>Author:</strong> {book.author}</p>
           <p><strong>Category:</strong> {book.category}</p>
           <h4>${book.price}</h4>

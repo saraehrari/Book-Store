@@ -12,10 +12,6 @@ export default function Navbar() {
        className={({ isActive }) => isActive ? "active" : ""}
       >Books</NavLink>
 
-      <NavLink to="/bookdetails"
-       className={({ isActive }) => isActive ? "active" : ""}
-      >Book Details</NavLink>
-
       <NavLink to="/login"
        className={({ isActive }) => isActive ? "active" : ""}
       >Login</NavLink>
