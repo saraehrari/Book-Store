@@ -12,18 +12,9 @@ export default function BookDetails() {
 
   return (
     <div className="container py-5">
-      <Link to="/books" className="btn btn-outline-dark mb-4">
+      <Link to="/books">
         ← Back
       </Link>
-
-      <div className="row">
-        <div className="col-md-4">
-          <img
-            src={book.image}
-            alt={book.title}
-            className="img-fluid rounded"
-          />
-        </div>
 
         <div className="col-md-8">
           <h2>{book.title}</h2>
@@ -37,6 +28,6 @@ export default function BookDetails() {
           </button>
         </div>
       </div>
-    </div>
+    
   );
 }

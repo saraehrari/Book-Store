@@ -49,15 +49,16 @@ function App() {
             isAuth ? (
               <Navigate to="/books" replace />
             ) : (
-              <Login isAuth={isAuth} login={login} logout={logout} />
+              <Login login={login} logout={logout} />
             )
           }
 
-           
         />
 
-        
+       
       </Routes>
+       
+           
     </>
   );
 }

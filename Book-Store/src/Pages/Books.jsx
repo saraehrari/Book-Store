@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import Books from "./Books";
+import Books from "../Data/Book";
 
 export default function BooksPage() {
   return (
@@ -30,11 +30,6 @@ export default function BooksPage() {
 
               <div className="book-card">
 
-                <div className="book-card-image">
-                  <img
-                    src={book.image}
-                    alt={book.title}
-                  />
                 </div>
 
                 <div className="book-card-body">
@@ -73,7 +68,7 @@ export default function BooksPage() {
                 </div>
               </div>
 
-            </div>
+            
           ))}
 
         </div>
