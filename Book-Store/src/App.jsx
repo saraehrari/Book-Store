@@ -8,6 +8,7 @@ import Books from './Pages/Books';
 import BookDetails from "./Pages/BookDetials";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Pages/ProtectedRoute";
+import Card from "./Pages/Card";
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
@@ -52,9 +53,14 @@ function App() {
               <Login login={login} logout={logout} />
             )
           }
-
+          
+          
         />
+ 
 
+ <Route>
+    <Route to="/card" element={<Card />} />
+ </Route>
        
       </Routes>
        
