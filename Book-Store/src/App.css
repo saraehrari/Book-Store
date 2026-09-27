@@ -10,7 +10,7 @@
 
 body {
   font-family: "Inter", "Segoe UI", Arial, sans-serif;
-  background: #f7f7f8;
+  background:#030164;
   color: #171717;
 }
 
@@ -121,7 +121,7 @@ section.text-center .btn:hover {
 
 .books-page {
   min-height: 100vh;
-  background: #f7f7f8;
+  background: #030164;
 }
 
 .books-header {
