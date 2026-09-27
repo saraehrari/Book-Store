@@ -15,10 +15,6 @@ export default function Navbar() {
       <NavLink to="/login"
        className={({ isActive }) => isActive ? "active" : ""}
       >Login</NavLink>
-
-      <NavLink to="/card"
-       className={({ isActive }) => isActive ? "active" : ""}
-      >Cart</NavLink>
     </nav>
   );
 }

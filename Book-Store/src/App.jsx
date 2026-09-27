@@ -8,12 +8,14 @@ import Books from './Pages/Books';
 import BookDetails from "./Pages/BookDetials";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Pages/ProtectedRoute";
-import Card from "./Pages/Card";
 import PagenotFound from "./Pages/PagenotFound"
 
 function App() {
   const [isAuth, setIsAuth] = useState(false);
 
+
+
+}   
   function login() {
     setIsAuth(true);
   }
@@ -59,15 +61,15 @@ function App() {
         />
  
 
- <Route>
-    <Route to="/card" element={<Card />} />
- </Route>
-        <Route to="*" element={<PagenotFound />} />
-      </Routes>
+ 
+  
+      
+      
+       </Routes>
       
            
     </>
   );
-}
+
 
 export default App;
