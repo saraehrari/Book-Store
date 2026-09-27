@@ -5,7 +5,6 @@ const books = [
     author: "James Clear",
     price: 18,
     category: "Self Development",
-    image: "/images/atomic-habits.jpg",
     description: "A practical guide to building good habits."
   },
   {
@@ -14,7 +13,6 @@ const books = [
     author: "Robert C. Martin",
     price: 25,
     category: "Programming",
-    image: "/images/clean-code.jpg",
     description: "A handbook of writing clean and maintainable code."
   },
   {
@@ -23,7 +21,6 @@ const books = [
     author: "Paulo Coelho",
     price: 15,
     category: "Fiction",
-    image: "/images/alchemist.jpg",
     description: "A famous novel about following your dreams."
   }
 ];
