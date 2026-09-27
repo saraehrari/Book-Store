@@ -1,34 +1,75 @@
-import { useState } from "react"
 
-export default function Card(){
-const[increse,setIncrese] = useState(true);
-const[decrese, setDecrese] = useState(true);
-const[remove, setRemove] = useState();
+import { use, useState } from "react";
+import books from "../Data/Book";
 
+export default function Card({ Books }) {
+  const [quantity, setQuantity] = useState(1);
+  const[remove, setRemove]= useState(remove)
 
-    return(
-        <div>
-            <h1>Shopping Cart</h1>
-             {Books.map((b) =>{
-             {b.title}
-             {b.id}
-             {b.author}
-             {b.price}
-             {b.category}
-             {b.image}
-             {b.description}
-            })}
+  function increase() {
+    setQuantity(quantity + 1);
+  }
 
+  function decrease() {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  }
 
+  function Remove(){
+    setRemove(remove.filter((Books)=> books.id !==id)  )
+  }
 
-           <button onClicke ={(()=>setIncrese(false) )}>Increse</button>
-            {increse+1}
+  return (
+    <div>
+      <h1>Shopping Cart</h1>
 
-             <button onClicke ={(()=>setDecrese(false) )}>Decrese</button>
-            {decrese-1}
+      {Books.map((b) => (
+        <div key={b.id}>
+          <h2>{b.title}</h2>
+          <p>ID: {b.id}</p>
+          <p>Author: {b.author}</p>
+          <p>Price: ${b.price}</p>
+          <p>Category: {b.category}</p>
+          <img src={b.image} alt={b.title} width="150" />
+          <p>{b.description}</p>
 
+          <button onClick={increase}>Increase</button>
 
+          <span> {quantity} </span>
 
+          <button onClick={decrease}>Decrease</button>
+
+          <button onClick={()=> Remove(b.id)}>Remove</button>
         </div>
-    )
-}
+
+      ))}
+
+      <div className="card p-3">
+  <h4>Order Summary</h4>
+  <hr />
+
+  <div className="d-flex justify-content-between">
+    <span>Subtotal</span>
+    <span>$43</span>
+  </div>
+
+  <div className="d-flex justify-content-between">
+    <span>Delivery</span>
+    <span>Free</span>
+  </div>
+
+  <hr />
+
+  <div className="d-flex justify-content-between fw-bold">
+    <span>Total</span>
+    <span>$43</span>
+  </div>
+
+  <button className="btn btn-dark w-100 mt-3">
+    Proceed to Checkout
+  </button>
+  
+</div>
+    </div>
+  )};
