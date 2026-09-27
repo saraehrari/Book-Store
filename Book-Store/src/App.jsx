@@ -3,7 +3,7 @@ import { Routes, Route, Navigate } from "react-router-dom";
 
 import Navbar from "./Components/Navbar";
 import Home from "./Pages/Home";
-import Books from "./Pages/Books";
+import Books from './Pages/Books';
 import BookDetails from "./Pages/BookDetials";
 import Login from "./Pages/Login";
 import ProtectedRoute from "./Pages/ProtectedRoute";
