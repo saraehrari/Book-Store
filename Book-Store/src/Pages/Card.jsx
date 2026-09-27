@@ -32,7 +32,6 @@ export default function Card({ Books }) {
           <p>Author: {b.author}</p>
           <p>Price: ${b.price}</p>
           <p>Category: {b.category}</p>
-          <img src={b.image} alt={b.title} width="150" />
           <p>{b.description}</p>
 
           <button onClick={increase}>Increase</button>
@@ -46,28 +45,28 @@ export default function Card({ Books }) {
 
       ))}
 
-      <div className="card p-3">
+      <div>
   <h4>Order Summary</h4>
   <hr />
 
-  <div className="d-flex justify-content-between">
+  <div >
     <span>Subtotal</span>
     <span>$43</span>
   </div>
 
-  <div className="d-flex justify-content-between">
+  <div>
     <span>Delivery</span>
     <span>Free</span>
   </div>
 
   <hr />
 
-  <div className="d-flex justify-content-between fw-bold">
+  <div>
     <span>Total</span>
     <span>$43</span>
   </div>
 
-  <button className="btn btn-dark w-100 mt-3">
+  <button>
     Proceed to Checkout
   </button>
   
